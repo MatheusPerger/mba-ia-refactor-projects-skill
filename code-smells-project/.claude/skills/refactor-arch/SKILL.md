@@ -51,3 +51,27 @@ IMPORTANTE: não adicione informações extras, nem entre em detalhes nessa fase
 - A skill deve imprimir o resumo acima **exatamente** no formato definido, sem informações extras;
 - Validar se o a fase 1 detectou corretamente a linguagem, framework, domínio e número de arquivos analisados;
 - Obrigatório: para validar a execução da fase 1, use o checklist de validação em `references/checklist.md` (Fase 1 — Análise).
+
+# Fase 2 — Auditoria
+Nesta fase, você deve auditar o projeto legado, detectando code smells e antipadrões de arquitetura. Ao final, você deve gerar um relatório de auditoria estruturado, com a formatação definida em `references/report-template.md`. O relatório deve conter:
+- Arquivo e linha/intervalo do code smell;
+- Descrição resumida do code smell e do problema que gera;
+- Impacto do code smell na aplicação ou para o cliente;
+- Recomendação de refatoração, com referência ao `references/refactoring-playbook.md` se houver.
+
+Ao final da auditoria, você deve imprimir o relatório **exatamente** no formato definido, sem informações extras. O relatório deve conter todos os code smells detectados, classificados por gravidade (CRITICAL, HIGH, MEDIUM, LOW).
+
+O relatório deve ser salvo em `reports/audit-project-1.md` e deve ser impresso no console.
+
+**[OBRIGATÓRIO]** Ao final, use esta pergunta para confirmar se o usuário deseja prosseguir com a fase 3 (refatoração): 
+
+```
+Phase 2 complete. Proceed with refactoring (Phase 3)? [y/n]
+```
+
+## Validação de execução
+- A skill deve imprimir o relatório de auditoria **exatamente** no formato definido, sem informações extras;
+- O relatório deve encontrar pelo menos 5 findings;
+- O relatório deve conter pelo menos 1 finding crítico;
+- Ao final da execução, a skill deve perguntar ao usuário se deseja prosseguir com a fase 3 (refatoração).
+- Obrigatório: para validar a execução da fase 2, use o checklist de validação em `references/checklist.md` (Fase 2 — Auditoria).
