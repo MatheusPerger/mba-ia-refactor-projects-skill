@@ -704,8 +704,8 @@ if total > LIMITE_DESCONTO:
 **Transformação:**
 
 - Números soltos substituídos por constantes nomeadas
-- Valores centralizados em `config/constants.py`
-- A regra do desconto passa a ser legível
+- Valores com nomes que indicam o que representam
+- Podem ser variaveis locais, de classe ou constantes centralizadas (quando existem usos de varios arquivos)
 
 **Pontos de atenção:**
 

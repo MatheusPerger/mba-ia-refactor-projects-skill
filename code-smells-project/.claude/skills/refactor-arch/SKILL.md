@@ -53,7 +53,7 @@ IMPORTANTE: não adicione informações extras, nem entre em detalhes nessa fase
 - Obrigatório: para validar a execução da fase 1, use o checklist de validação em `references/checklist.md` (Fase 1 — Análise).
 
 # Fase 2 — Auditoria
-Nesta fase, você deve auditar o projeto legado, detectando code smells e antipadrões de arquitetura. Antes de começar, leia `references/anti-patterns-catalog.md` (sinais de detecção e severidade), `references/refactoring-playbook.md` (para referenciar as receitas nas recomendações) e `references/report-template.md`. Ao final, você deve gerar um relatório de auditoria estruturado, com a formatação definida em `references/report-template.md`. O relatório deve conter:
+Nesta fase, você deve auditar o projeto legado, detectando code smells e antipadrões de arquitetura. Antes de começar, leia `references/anti-pattern-catalog.md` (sinais de detecção e severidade), `references/refactoring-playbook.md` (para referenciar as receitas nas recomendações) e `references/report-template.md`. Ao final, você deve gerar um relatório de auditoria estruturado, com a formatação definida em `references/report-template.md`. O relatório deve conter:
 - Arquivo e linha/intervalo do code smell;
 - Descrição resumida do code smell e do problema que gera;
 - Impacto do code smell na aplicação ou para o cliente;
