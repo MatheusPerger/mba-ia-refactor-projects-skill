@@ -11,9 +11,10 @@ MVC separa a aplicação em três camadas, cada uma com uma responsabilidade. Is
 É a camada de dados e regras de negócio.
 
 - Representa as entidades do domínio (Usuário, Pedido, Produto).
-- Acessa e persiste dados (banco, ORM, queries).
-- Contém as regras e validações de negócio, como "um pedido não pode ter total negativo".
+- Define a estrutura das entidades e seus invariantes (campos, tipos, relacionamentos).
+- Pode conter comportamento simples da própria entidade (ex.: `pedido.calcular_total()`).
 - Não conhece a View nem o Controller, nem HTTP.
+- Não executa queries, não conhece HTTP e não formata resposta.
 
 ### View (Visão)
 É a camada de apresentação.
