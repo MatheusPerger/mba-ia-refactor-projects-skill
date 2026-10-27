@@ -1,0 +1,12 @@
+from flask import Blueprint
+
+
+def criar_blueprint(controller, auth):
+    bp = Blueprint("usuarios", __name__)
+    bp.add_url_rule("/usuarios", "listar_usuarios", auth.admin(controller.listar), methods=["GET"])
+    bp.add_url_rule(
+        "/usuarios/<int:id>", "buscar_usuario", auth.proprio_ou_admin("id")(controller.buscar), methods=["GET"]
+    )
+    bp.add_url_rule("/usuarios", "criar_usuario", controller.criar, methods=["POST"])
+    bp.add_url_rule("/login", "login", controller.login, methods=["POST"])
+    return bp

@@ -61,7 +61,7 @@ Nesta fase, você deve auditar o projeto legado, detectando code smells e antipa
 
 Ao final da auditoria, você deve imprimir o relatório **exatamente** no formato definido, sem informações extras. O relatório deve conter todos os code smells detectados, classificados por gravidade (CRITICAL, HIGH, MEDIUM, LOW).
 
-O relatório deve ser salvo em `reports/audit-project-1.md` (relativo à raiz do projeto analisado) e deve ser impresso no console.
+O relatório deve ser salvo em `reports/audit-project-{1,2,3}.md` (na raiz do projeto) e deve ser impresso no console.
 
 **[OBRIGATÓRIO]** Ao final, use esta pergunta para confirmar se o usuário deseja prosseguir com a fase 3 (refatoração): 
 
